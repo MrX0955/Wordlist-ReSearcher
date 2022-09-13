@@ -3,8 +3,8 @@ class MrX:
         self.num = 0
         self.hesapnum = 0
         self.liste = []
-        aranilacak_txt = input("Aranılacak TXT ismi giriniz: ")
-        arayacak_txt = input("Arayacak TXT ismi giriniz: ")
+        aranilacak_txt = input("Taratılacak TXT ismi giriniz: ")
+        arayacak_txt = input("Tarayacak TXT ismi giriniz: ")
         self.accts = open(aranilacak_txt, "r", encoding="utf-8").readlines()
         for i in self.accts: self.acct = i.strip()
         self.keys = open(arayacak_txt, "r", encoding="utf-8").readlines()
