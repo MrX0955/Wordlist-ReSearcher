@@ -3,9 +3,11 @@ class MrX:
         self.num = 0
         self.hesapnum = 0
         self.liste = []
-        self.accts = open("hhh.txt", "r", encoding="utf-8").readlines()
+        aranilacak_txt = input("Aranılacak TXT ismi giriniz: ")
+        arayacak_txt = input("Arayacak TXT ismi giriniz: ")
+        self.accts = open(aranilacak_txt, "r", encoding="utf-8").readlines()
         for i in self.accts: self.acct = i.strip()
-        self.keys = open("key.txt", "r", encoding="utf-8").readlines()
+        self.keys = open(arayacak_txt, "r", encoding="utf-8").readlines()
 
     def main(self):
         while len(self.accts) > self.num:
